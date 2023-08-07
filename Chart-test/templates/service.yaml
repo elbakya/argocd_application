@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-hostname-svc
+spec:
+  selector:
+    application: {{ .Release.Name }}-hostname          #deployment labels
+  ports:
+    - protocol: TCP
+      port: {{ .Values.ports.lb_port }}
+      targetPort: {{ .Values.ports.container_port }}
+

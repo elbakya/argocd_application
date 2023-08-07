@@ -1,0 +1,12 @@
+replicaCount: 3
+
+containers:
+  image: docker/getting-started
+  
+ports:
+  container_port: 80
+  lb_port: 80
+
+
+host: docker.am
+ 

@@ -1,0 +1,12 @@
+replicaCount: 3
+
+containers:
+  image: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example:latest
+  
+ports:
+  container_port: 3000
+  lb_port: 80
+
+
+host: test.am
+ 
