@@ -8,5 +8,5 @@ ports:
   lb_port: 80
 
 
-host: test.am
+host: kub.am
  
