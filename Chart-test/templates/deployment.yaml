@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: {{ .Release.Name }}-hostname-print
-        image: {{ .Values.containers.image }}
+        image: "{{ .Values.containers.image }}:{{ .Values.containers.tag }}"
         ports:
         - containerPort: {{ .Values.ports.container_port }}
