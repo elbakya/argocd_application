@@ -1,8 +1,8 @@
 helm:
   parameters:
-  - name: container.image.repository
+  - name: image.repository
     value: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example
     forcestring: true
-  - name: container.image.tag
-    value: v0.4.13
+  - name: image.tag
+    value: v0.4.14
     forcestring: true
