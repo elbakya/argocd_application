@@ -1,8 +1,20 @@
 helm:
   parameters:
+  - name: ports.container_port
+    value: "3000"
+    forcestring: false
+  - name: ports.lb_port
+    value: "80"
+    forcestring: false
+  - name: host
+    value: kub.am
+    forcestring: false
+  - name: replicaCount
+    value: "3"
+    forcestring: false
   - name: containers.image
     value: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example
     forcestring: true
   - name: containers.tag
-    value: v0.4.17
+    value: v0.4.1
     forcestring: true
