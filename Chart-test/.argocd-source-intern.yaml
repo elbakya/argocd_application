@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example
+    forcestring: true
+  - name: image.tag
+    value: v0.4.7
+    forcestring: true
