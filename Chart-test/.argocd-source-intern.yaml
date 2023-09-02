@@ -16,5 +16,5 @@ helm:
     value: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example
     forcestring: true
   - name: containers.tag
-    value: v0.4.29
+    value: v0.4.30
     forcestring: true
