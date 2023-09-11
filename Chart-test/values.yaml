@@ -1,7 +1,7 @@
 replicaCount: 3
 
 containers:
-  image: 548844171305.dkr.ecr.us-east-1.amazonaws.com/private-example
+  image: public.ecr.aws/s1e9p4h4/brainscale-task2
   tag: latest
   
 ports:
