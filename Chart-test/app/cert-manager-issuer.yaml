@@ -10,7 +10,7 @@ spec:
     namespace: cert-manager-issuers
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://artifacthub.io/packages/helm/adfinis/cert-manager-issuers
+    repoURL: https://charts.adfinis.com
     chart: cert-manager-issuers
     targetRevision: 0.2.5
   project: default
