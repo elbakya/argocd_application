@@ -10,7 +10,7 @@ spec:
     namespace: external-dns
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://artifacthub.io/packages/helm/bitnami/external-dns
+    repoURL: https://charts.bitnami.com/bitnami
     chart: external-dns
     targetRevision: 0.14.0
   project: default
