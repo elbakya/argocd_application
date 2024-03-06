@@ -26,4 +26,5 @@ spec:
       - PruneLast=true
   helm:
     values: |
-      region: eu-central-1
+      aws:
+        region: eu-central-1
