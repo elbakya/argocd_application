@@ -24,3 +24,6 @@ spec:
       - CreateNamespace=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
+  helm:
+    values: |
+      region: "eu-central-1"
