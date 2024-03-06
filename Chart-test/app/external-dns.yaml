@@ -26,7 +26,5 @@ spec:
       - PruneLast=true
   helm:
     values: |
-      enabled: true
-      argo_enabled = true
       aws:
         region: eu-central-1
