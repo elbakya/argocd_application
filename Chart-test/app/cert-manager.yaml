@@ -13,6 +13,10 @@ spec:
     repoURL: https://charts.jetstack.io
     chart: cert-manager
     targetRevision: 1.14.3
+    helm:
+      parameters:
+      - name: "installCRDs"
+        value: true
   project: default
   syncPolicy:
     automated:
@@ -24,8 +28,4 @@ spec:
       - CreateNamespace=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
-source:
-  helm:
-    parameters:
-    - name: "installCRDs"
-      value: true
+
