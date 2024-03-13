@@ -24,9 +24,7 @@ spec:
       - CreateNamespace=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
+source:
   helm:
-    values: |
-      aws:
-        region: eu-central-1
-      domainFilters:
-        - harut.velvioo.brainscale.cloud
+    valueFiles:
+    - ../values/external-dns-values.yaml
