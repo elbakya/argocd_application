@@ -26,5 +26,6 @@ spec:
       - PruneLast=true
 source:
   helm:
-    valueFiles:
-    - ../values/cert-manager-values.yaml
+    parameters:
+    - name: "installCRDs"
+      value: true
