@@ -1,0 +1,4 @@
+aws:
+  region: eu-central-1
+domainFilters:
+  - harut.velvioo.brainscale.cloud
