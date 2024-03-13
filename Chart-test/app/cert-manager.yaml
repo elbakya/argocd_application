@@ -24,6 +24,7 @@ spec:
       - CreateNamespace=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
+source:
   helm:
-    values: |
-      installCRDs: True
+    valueFiles:
+    - ../values/cert-manager-values.yaml
