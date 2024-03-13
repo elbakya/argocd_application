@@ -26,5 +26,8 @@ spec:
       - PruneLast=true
 source:
   helm:
-    valueFiles:
-    - ../values/external-dns-values.yaml
+    parameters:
+    - name: "aws.region"
+      value: eu-central-1
+    - name: "domainFilters"
+      value: harut.velvioo.brainscale.cloud
