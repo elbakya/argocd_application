@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   source:
     chart: kube-ops-view
-    repoURL: https://christianknell.github.io/helm-charts
-    targetRevision: 3.5.0
+    repoURL: https://charts.christianhuth.de
+    targetRevision: 3.5.1
   project: default
   syncPolicy:
     automated:
