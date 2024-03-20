@@ -14,9 +14,14 @@ spec:
     chart: cert-manager
     targetRevision: 1.14.4
     helm:
-      parameters:
-      - name: "installCRDs"
-        value: true
+    #  parameters:
+    #  - name: "installCRDs"
+    #    value: true
+    valueFiles:
+      - $values/Chart-test/values/cert-manager-values.yaml
+  - repoURL: https://github.com/elbakya/argocd_application.git
+    targetRevision: main
+    ref: values
   project: default
   syncPolicy:
     automated:
