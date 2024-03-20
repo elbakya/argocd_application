@@ -9,15 +9,12 @@ spec:
   destination:
     namespace: cert-manager
     server: https://kubernetes.default.svc
-  source:
-    repoURL: https://charts.jetstack.io
+  sources:
+  - repoURL: https://charts.jetstack.io
     chart: cert-manager
     targetRevision: 1.14.4
     helm:
-    #  parameters:
-    #  - name: "installCRDs"
-    #    value: true
-    valueFiles:
+      valueFiles:
       - $values/Chart-test/values/cert-manager-values.yaml
   - repoURL: https://github.com/elbakya/argocd_application.git
     targetRevision: main
