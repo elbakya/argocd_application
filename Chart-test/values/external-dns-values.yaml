@@ -15,3 +15,6 @@ policy: sync
 registry: txt
 # R53Zone ID
 txtOwnerId: velvio
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::261033416540:policy/route53Access
