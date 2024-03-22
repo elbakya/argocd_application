@@ -15,8 +15,8 @@ sources:
 policy: sync
 
 registry: txt
-# R53Zone ID
-txtOwnerId: velvio
+
+txtOwnerId: velvioo
 
 serviceAccount:
   annotations:
