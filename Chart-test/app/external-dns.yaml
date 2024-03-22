@@ -9,10 +9,16 @@ spec:
   destination:
     namespace: external-dns
     server: https://kubernetes.default.svc
-  source:
-    repoURL: https://charts.bitnami.com/bitnami
+  sources:
+  - repoURL: https://charts.bitnami.com/bitnami
     chart: external-dns
     targetRevision: 6.35.0
+    helm:
+      valueFiles:
+      - $values/Chart-test/values/external-dns-values.yaml
+  - repoURL: https://github.com/elbakya/argocd_application.git
+    targetRevision: main
+    ref: values
     #helm:
     #  parameters:
     #  - name: "aws.region"
