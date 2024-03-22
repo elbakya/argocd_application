@@ -15,7 +15,7 @@ policy: sync
 
 registry: txt
 # R53Zone ID
-txtOwnerId: velvio
+txtOwnerId: harut
 
 serviceAccount:
   annotations:
