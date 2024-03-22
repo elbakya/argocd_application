@@ -2,3 +2,16 @@ aws:
   region: eu-central-1
 domainFilters:
   - harut.velvioo.brainscale.cloud
+  
+provider: aws
+logLevel: info
+
+sources:
+  - service
+  - ingress
+
+policy: sync
+
+registry: txt
+# R53Zone ID
+txtOwnerId: velvio
