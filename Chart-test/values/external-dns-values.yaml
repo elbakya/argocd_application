@@ -1,5 +1,6 @@
 aws:
   region: eu-central-1
+  zoneType: public
 domainFilters:
   - harut.velvioo.brainscale.cloud
   
