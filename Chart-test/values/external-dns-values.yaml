@@ -1,6 +1,7 @@
 aws:
   region: eu-central-1
   zoneType: public
+  roleArn: "arn:aws:iam::261033416540:role/external-dns "
 domainFilters:
   - harut.velvioo.brainscale.cloud
   
