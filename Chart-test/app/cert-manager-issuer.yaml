@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: cert-manager-issuers
     server: https://kubernetes.default.svc
-  source:
+  sources:
   - repoURL: https://charts.adfinis.com
     chart: cert-manager-issuers
     targetRevision: 0.2.5
