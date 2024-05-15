@@ -13,15 +13,5 @@ clusterIssuers:
       solvers:
       - http01:
           ingress:
-            podTemplate:
-              spec:
-                affinity:
-                    nodeAffinity:
-                      requiredDuringSchedulingIgnoredDuringExecution:
-                        nodeSelectorTerms:
-                        - matchExpressions:
-                          - key: type
-                            operator: In
-                            values:
-                            - addons                       
+                  
             class: nginx
