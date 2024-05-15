@@ -10,9 +10,14 @@ spec:
     namespace: cert-manager-issuers
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://charts.adfinis.com
+  - repoURL: https://charts.adfinis.com
     chart: cert-manager-issuers
     targetRevision: 0.2.5
+    helm:
+      valueFiles:
+      - $values/Chart-test/values/cert-manager-issuer-values.yaml
+  - repoURL: https://github.com/elbakya/argocd_application.git
+    targetRevision: main
   project: default
   syncPolicy:
     automated:
