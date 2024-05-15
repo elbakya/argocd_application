@@ -18,6 +18,7 @@ spec:
       - $values/Chart-test/values/cert-manager-issuer-values.yaml
   - repoURL: https://github.com/elbakya/argocd_application.git
     targetRevision: main
+    ref: values
   project: default
   syncPolicy:
     automated:
