@@ -1,0 +1,27 @@
+clusterIssuers:
+- apiVersion: cert-manager.io/v1
+  kind: ClusterIssuer
+  metadata:
+    name: letsencrypt-production
+  spec:
+    acme:
+      email: devops@test.velvioo.com
+      preferredChain: ""
+      privateKeySecretRef:
+        name: letsencrypt-production
+      server: https://acme-v02.api.letsencrypt.org/directory
+      solvers:
+      - http01:
+          ingress:
+            podTemplate:
+              spec:
+                affinity:
+                    nodeAffinity:
+                      requiredDuringSchedulingIgnoredDuringExecution:
+                        nodeSelectorTerms:
+                        - matchExpressions:
+                          - key: type
+                            operator: In
+                            values:
+                            - addons                       
+            class: nginx
