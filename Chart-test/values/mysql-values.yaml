@@ -1,0 +1,7 @@
+auth:
+  rootPassword: ""
+  database: mydatabase
+  username: myuser
+  password: mypassword
+  replicationUser: repluser
+  replicationPassword: replpassword
