@@ -10,9 +10,16 @@ spec:
     namespace: hotel-app
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/elbakya
-    chart: hotel-app-helm-chart
-    targetRevision: '2.0'
+  - repoURL: https://github.com/elbakya.git
+    targetRevision: master
+    path: hotel-app-helm-chart
+    helm:
+      releaseName: hotel-app-helm-chart
+      valueFiles:
+      - values.yaml
+    #repoURL: https://github.com/elbakya
+    #chart: hotel-app-helm-chart
+    #targetRevision: '2.0'
   project: default
   syncPolicy:
     automated:
