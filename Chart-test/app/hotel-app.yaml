@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     helm:
       values: |
-        {{.Values.rdsHost}}
+        rdsHost: {{.Values.rdsHost}}
       valueFiles:
         - values.yaml
   project: default
