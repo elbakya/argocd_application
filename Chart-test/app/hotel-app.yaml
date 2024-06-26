@@ -9,16 +9,16 @@ spec:
   destination:
     namespace: hotel-app
     server: https://kubernetes.default.svc
-  source:
-    repoURL: 'https://github.com/elbakya/hotel-app-helm-chart'
+  sources:
+  - repoURL: 'https://github.com/elbakya/hotel-app-helm-chart'
     path: .
     targetRevision: HEAD
     helm:
       valueFiles:
-      - values.yaml
-  #- repoURL: https://github.com/elbakya/argocd_application.git
-  #  targetRevision: main
-  #  ref: values
+      - $values/Chart-test/values/test-values.yaml
+  - repoURL: https://github.com/elbakya/argocd_application.git
+    targetRevision: main
+    ref: values
   project: default
   syncPolicy:
     automated:
