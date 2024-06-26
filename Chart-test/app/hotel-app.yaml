@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-      - $values/Chart-test/values/test-values.yaml
+      - $values/Chart-test/values/test-value.yaml
   - repoURL: https://github.com/elbakya/argocd_application.git
     targetRevision: main
     ref: values
