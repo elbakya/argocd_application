@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: hotel-app
     server: https://kubernetes.default.svc
-  source:
+  sources:
   - repoURL: 'https://github.com/elbakya/hotel-app-helm-chart'
     path: .
     targetRevision: HEAD
