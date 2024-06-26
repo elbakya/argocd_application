@@ -14,6 +14,9 @@ spec:
     path: .
     targetRevision: HEAD
     helm:
+      parameters:
+        - name: rdsHost
+          value: "custom-dependent-application"
       #values: |
        # rdsHost: "{{.Values.rdsHost}}"
       valueFiles:
