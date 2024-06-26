@@ -17,7 +17,8 @@ spec:
       #values: |
        # rdsHost: "{{.Values.rdsHost}}"
       valueFiles:
-        - $values/Chart-test/values/values.yaml
+        #- $values/Chart-test/values/values.yaml
+        - values.yaml
   project: default
   syncPolicy:
     automated:
