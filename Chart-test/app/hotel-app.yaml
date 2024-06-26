@@ -14,8 +14,8 @@ spec:
     path: .
     targetRevision: HEAD
     helm:
-      values: |
-        rdsHost: "{{.Values.rdsHost}}"
+      #values: |
+       # rdsHost: "{{.Values.rdsHost}}"
       valueFiles:
         - $values/Chart-test/values/values.yaml
   project: default
