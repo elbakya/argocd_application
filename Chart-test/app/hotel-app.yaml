@@ -32,4 +32,4 @@ spec:
       - PruneLast=true
   parameters:
     - name: rdsHost
-      value: ""
+      value: "testtest"
