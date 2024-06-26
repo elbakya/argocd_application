@@ -14,11 +14,6 @@ spec:
     path: .
     targetRevision: HEAD
     helm:
-      parameters:
-        - name: rdsHost
-          value: "custom-dependent-application"
-      #values: |
-       # rdsHost: "{{.Values.rdsHost}}"
       valueFiles:
         - $values/Chart-test/values/values.yaml
   - repoURL: https://github.com/elbakya/argocd_application.git
