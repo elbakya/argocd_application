@@ -30,8 +30,8 @@ spec:
       - CreateNamespace=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
-  parameters:
-  - name: rdsHost
-    value: {{ .Values.rdsHost }}
-  - name: secretName
-    value: {{ .Values.secretName }}
+  #parameters:
+  #- name: rdsHost
+  #  value: {{ .Values.rdsHost }}
+  #- name: secretName
+  #  value: {{ .Values.secretName }}
